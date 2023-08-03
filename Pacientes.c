@@ -99,7 +99,7 @@ int deletar()
 	
 	if(file == NULL)
 	{
-		printf("O usuario nao se encontra no sistema! \n"):
+		printf("O usuario nao se encontra no sistema! \n");
 		system("pause");//"pause" para parar a mesma tela para que o usuario consiga ler
 		
 	}
@@ -121,7 +121,9 @@ int main()
   			printf("Escolha a opção desejada do menu:\n\n");
   			printf("\t1 - Registrar nomes\n");
  			printf("\t2 - Consultar nomes\n");
- 			printf("\t3 - Deletar nomes\n\n"); //Fim do menu
+ 			printf("\t3 - Deletar nomes\n\n"); 
+ 			printf("\t4 - Sair do sistema\n\n");
+ 			printf("Opção: ");//fim do menu
 	 
  			scanf("%d", &opcao);
  	
@@ -139,6 +141,11 @@ int main()
 				
 				case 3:
 				deletar();
+				break;
+				
+				case 4:
+				printf("Obrigado por ultilizar o sistema!\n");
+				return 0;
 				break;
 			
 				default:
